@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+header.policy-header {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #000;  /* Mantenemos el color del texto en negro */
+    animation: fadeIn 1s ease-in;
+}
+
+header.policy-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #0056b3;
+    margin-top: 20px;
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+}
+
+.content h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #0056b3;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+footer.policy-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #004aad;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+footer.policy-footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+#toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#toTopBtn:hover {
+    opacity: 0.8;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

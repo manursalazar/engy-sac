@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableros Eléctricos - ENGY S.A.C</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablerosElectricos.css">
+    <script src="scripts.js" defer></script>
+    <script src="include.js" defer></script>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+
+    <!--Cotiza hoy movimiento-->
+    <div class="quick-links-slider">
+        <nav>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+        </nav>
+    </div>
+
+    <!-- Tableros Eléctricos Section -->
+    <section class="tableros-electricos">
+        <h1>Tableros Eléctricos</h1>
+        <div class="tableros-container">
+            <div class="tablero-item">
+                <img src="./Recursos/tableroElectrico-8kw.jpg" alt="Tablero Eléctrico 8 kW">
+                <h2>Tablero Eléctrico 8 kW</h2>
+                <p>Tablero eléctrico de 8 kW ideal para controlar la distribución eléctrica en plantas mineras pequeñas y medianas, con protección avanzada para evitar sobrecargas.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+            <div class="tablero-item">
+                <img src="./Recursos/tableroElectrico-10kw.jpg" alt="Tablero Eléctrico 10 kW">
+                <h2>Tablero Eléctrico 10 kW</h2>
+                <p>Perfecto para la gestión energética en instalaciones industriales medianas. Proporciona una distribución segura y eficiente de la energía en entornos exigentes.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+            <div class="tablero-item">
+                <img src="./Recursos/tableroElectrico-15kw.jpg" alt="Tablero Eléctrico 15 kW">
+                <h2>Tablero Eléctrico 15 kW</h2>
+                <p>Modelo robusto de 15 kW diseñado para grandes proyectos mineros e industriales. Alta resistencia, confiabilidad, y tecnología de punta para control eficiente.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+        </div>
+    </section>
+
+    
+        
+    <!-- Galería de Fotos -->
+    <section class="galeria">
+        <h2>Nuestra Galería</h2>
+        <div class="galeria-container">
+            <img src="./Recursos/tablerosElectricos/t1.jpg" alt="Galería 1">
+            <img src="./Recursos/tablerosElectricos/t2.jpg" alt="Galería 2">
+            <img src="./Recursos/tablerosElectricos/t3.jpg" alt="Galería 3">
+            <img src="./Recursos/tablerosElectricos/t4.jpg" alt="Galería 4">
+            <img src="./Recursos/tablerosElectricos/t5.jpg" alt="Galería 5">
+            <img src="./Recursos/tablerosElectricos/t6.jpg" alt="Galería 6">
+            <img src="./Recursos/tablerosElectricos/t7.jpg" alt="Galería 7">
+            <img src="./Recursos/tablerosElectricos/t8.jpg" alt="Galería 8">
+            <img src="./Recursos/tablerosElectricos/t9.jpg" alt="Galería 9">
+            <img src="./Recursos/tablerosElectricos/t10.jpg" alt="Galería 10">
+            <img src="./Recursos/tablerosElectricos/t11.jpg" alt="Galería 11">
+            <img src="./Recursos/tablerosElectricos/t12.jpg" alt="Galería 12">
+            <img src="./Recursos/tablerosElectricos/t22.jpg" alt="Galería 22">
+            <img src="./Recursos/tablerosElectricos/t23.jpg" alt="Galería 23">
+            <img src="./Recursos/tablerosElectricos/t24.jpg" alt="Galería 24">
+            <img src="./Recursos/tablerosElectricos/t25.jpg" alt="Galería 25">
+        </div>
+    </section>
+
+
+
+
+    <!-- Include Footer-->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript para Slider Automático -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Cambia la imagen cada 3 segundos
+        }
+    </script>
+</body>
+</html>

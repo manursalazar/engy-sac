@@ -1,0 +1,183 @@
+/* Ventiladores Axiales styles */
+.ventiladores-axiales {
+    max-width: 1000px; /* Ancho máximo */
+    margin: 50px auto; /* Margen superior e inferior */
+    padding: 0 20px; /* Relleno lateral */
+    text-align: center; /* Centra el texto */
+}
+
+.ventiladores-axiales h1 {
+    margin-bottom: 40px; /* Margen inferior */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    color: rgb(178, 17, 15); /* Rojo oscuro */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.ventiladores-container {
+    display: flex; /* Diseño en flexbox */
+    justify-content: space-between; /* Espacio entre elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.ventilador-item {
+    width: 30%; /* Ancho del 30% */
+    margin-bottom: 20px; /* Margen inferior */
+    text-align: center; /* Centra el texto */
+    border: 1px solid rgb(187, 187, 189); /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.ventilador-item:hover {
+    transform: translateY(-10px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.ventilador-item img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.ventilador-item h2 {
+    margin-bottom: 10px; /* Margen inferior */
+    font-size: 1.8rem; /* Tamaño de fuente */
+    color: rgb(194, 146, 72); /* Dorado */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.ventilador-item p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #666; /* Color gris */
+}
+
+.ventilador-item .ver-mas {
+    display: inline-block; /* Bloque en línea */
+    background-color: rgb(178, 17, 15); /* Rojo oscuro */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave de fondo */
+}
+
+.ventilador-item .ver-mas:hover {
+    background-color: rgb(194, 146, 72); /* Dorado al pasar el mouse */
+}
+
+/* Carrusel de imágenes */
+.carrusel {
+    position: relative; /* Posición relativa */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 50px auto; /* Margen superior e inferior */
+    overflow: hidden; /* Oculta contenido desbordado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del carrusel */
+}
+
+.carrusel-container {
+    display: flex; /* Diseño en flexbox */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+.carrusel img {
+    width: 300px; /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Asegura que las imágenes se adapten al tamaño manteniendo proporciones */
+    transition: transform 0.5s ease-in-out; /* Transición suave de transformación */
+    margin: 0 auto; /* Centra las imágenes */
+}
+
+.carrusel img:hover {
+    transform: scale(1.05); /* Escala al pasar el mouse */
+}
+
+.carrusel-prev,
+.carrusel-next {
+    position: absolute; /* Posición absoluta */
+    top: 20%; /* Parte superior */
+    width: auto; /* Ancho automático */
+    padding: 16px; /* Relleno interno */
+    margin-top: -22px; /* Ajuste vertical */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 18px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    user-select: none; /* Evita selección de texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    border-radius: 50%; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave de fondo */
+}
+
+.carrusel-prev:hover,
+.carrusel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro al pasar el mouse */
+}
+
+.carrusel-prev {
+    left: 10px; /* Posición izquierda */
+}
+
+.carrusel-next {
+    right: 10px; /* Posición derecha */
+}
+.quick-links-slider nav {
+    position: relative;
+    animation: marquee 15s linear infinite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quick-links-slider nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(178, 17, 15) ;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .ventilador-item {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        margin-bottom: 20px; /* Margen inferior */
+    }
+
+    .carrusel img {
+        width: 100%; /* En pantallas pequeñas, la imagen sigue ocupando el 100% */
+        height: auto; /* Mantiene la proporción en móviles */
+    }
+
+    .carrusel-prev,
+    .carrusel-next {
+        padding: 12px; /* Relleno interno */
+        font-size: 16px; /* Tamaño de fuente */
+    }
+}
+
+
+/*
+
+/* Responsive styles 
+@media (max-width: 768px) {
+    .ventiladores-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ventilador-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }*/
+

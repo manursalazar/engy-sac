@@ -1,0 +1,197 @@
+/* Tableros Eléctricos styles */
+.tableros-electricos {
+    max-width: 1000px; /* Define el ancho máximo de la sección en 1000px para mantener un tamaño óptimo en pantallas grandes */
+    margin: 50px auto; /* Añade un margen superior e inferior de 50px. El valor 'auto' a los lados centra la sección horizontalmente */
+    padding: 0 20px; /* Aplica un relleno interno de 20px a los lados, para evitar que el contenido toque los bordes del contenedor */
+    text-align: center; /* Centra el texto y otros elementos dentro de la sección en la pantalla */
+}
+/* movimiento de cotizacion*/
+.quick-links-slider nav {
+    position: relative;
+    animation: marquee 20s linear infinite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quick-links-slider nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(178, 17, 15) ;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Estilo para el encabezado de la sección de tableros eléctricos */
+.tableros-electricos h1 {
+    margin-bottom: 40px; /* Espacio inferior de 40px debajo del encabezado */
+    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+    color: rgb(178, 17, 15); /* Color rojo oscuro */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Contenedor principal de los tableros eléctricos */
+.tableros-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+/* Estilo para cada elemento del tablero */
+.tablero-item {
+    width: 30%; /* Ancho del 30% del contenedor */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    text-align: center; /* Centra el contenido del tablero */
+    border: 1px solid rgb(187, 187, 189); /* Borde gris alrededor del tablero */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno de 20px */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves para efectos de hover */
+}
+
+/* Estilo al pasar el mouse sobre el tablero */
+.tablero-item:hover {
+    transform: translateY(-10px); /* Mueve el tablero hacia arriba al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
+}
+
+/* Estilo para las imágenes de los tableros */
+.tablero-item img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 50%; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 20px; /* Espacio inferior de 20px debajo de la imagen */
+}
+
+/* Estilo para el título dentro de cada tablero */
+.tablero-item h2 {
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-size: 1.8rem; /* Tamaño de fuente para el subtítulo */
+    color: rgb(194, 146, 72); /* Color dorado */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Estilo para los párrafos dentro de cada tablero */
+.tablero-item p {
+    font-size: 1.2rem; /* Tamaño de fuente para la descripción */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #666; /* Color gris oscuro */
+}
+
+/* Estilo para el enlace "Ver más" dentro de cada tablero */
+.tablero-item .ver-mas {
+    display: inline-block; /* Permite aplicar relleno y fondo al enlace */
+    background-color: rgb(178, 17, 15); /* Color de fondo rojo oscuro */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Relleno interno para el enlace */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    text-decoration: none; /* Sin subrayado en el texto */
+    font-weight: bold; /* Negrita para el texto */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo al pasar el mouse sobre el enlace "Ver más" */
+.tablero-item .ver-mas:hover {
+    background-color: rgb(194, 146, 72); /* Cambia a color dorado al pasar el mouse */
+}
+
+/* Sección de video sobre el uso del tablero */
+.video-uso-tablero {
+    margin-top: 50px; /* Margen superior de 50px */
+    padding: 20px; /* Relleno interno de 20px */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+/* Estilo para el título de la sección de video */
+.video-uso-tablero h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    font-size: 2rem; /* Tamaño de fuente grande para el título */
+    color: #333; /* Color gris oscuro */
+}
+
+/* Contenedor para el video */
+.video-container {
+    position: relative; /* Necesario para posicionar el iframe */
+    overflow: hidden; /* Oculta el desbordamiento */
+    padding-top: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    margin-bottom: 20px; /* Espacio inferior de 20px */
+}
+
+/* Estilo para el iframe del video */
+.video-container iframe {
+    position: absolute; /* Posiciona el iframe en relación al contenedor */
+    top: 0; /* Alinea al top del contenedor */
+    left: 0; /* Alinea a la izquierda del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Alto completo del contenedor */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para los párrafos dentro de la sección de video */
+.video-uso-tablero p {
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #666; /* Color gris oscuro */
+}
+
+/* Estilo para la galería de fotos */
+.galeria {
+    padding: 50px 20px; /* Relleno interno de 50px en la parte superior e inferior, 20px a los lados */
+    background-color: #f9f9f9; /* Color de fondo gris muy claro */
+    text-align: center; /* Centra el texto dentro de la sección */
+    animation: fadeIn 1s ease-in-out 2s; /* Añade una animación de desvanecimiento */
+}
+
+/* Contenedor de la galería */
+.galeria-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    flex-wrap: wrap; /* Permite que las imágenes se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+/* Estilo para las imágenes de la galería */
+.galeria-container img {
+    width: 10%; /* Ancho del 10% del contenedor */
+    margin: 5px; /* Margen de 5px alrededor de cada imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves para efectos de hover */
+}
+
+/* Efecto al pasar el mouse sobre las imágenes de la galería */
+.galeria-container img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 300px) {
+    .tableros-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    .tablero-item {
+        width: 100%; /* Cada tablero ocupa el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Margen inferior de 20px */
+    }
+
+    .video-uso-tablero {
+        padding: 10px; /* Reduce el relleno interno para pantallas pequeñas */
+    }
+
+    .video-container {
+        padding-top: 75%; /* Cambia la relación de aspecto a 4:3 para pantallas más pequeñas */
+    }
+
+    .galeria-container img {
+        width: 100%; /* Cada imagen ocupa el 100% del ancho en pantallas pequeñas */
+    }
+}

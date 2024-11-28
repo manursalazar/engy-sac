@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar - ENGY S.A.C</title>
+    <link rel="stylesheet" href="cotizar.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="include.js" defer></script>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+    
+
+    <!-- Cotización Section -->
+    <section class="cotizacion">
+        <h1>Solicitar Cotización</h1>
+
+        
+        <div class="cotizacion-container">
+            <div class="cotizacion-form">
+                <form id="cotizacionForm">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="producto">Producto</label>
+                    <select id="producto" name="producto" required>
+                        <option value="electrobomba">Electrobomba Sumergible</option>
+                        <option value="tablero">Tablero Eléctrico</option>
+                        <option value="ventilador">Ventilador Axial</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                    <button type="submit">Enviar Cotización</button>
+                </form>
+            </div>
+            <div class="cotizacion-image">
+                <img src="./Recursos/electrobombasGrindex.jpeg" alt="Cotización">
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        document.getElementById("cotizacionForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Procesar la cotización aquí
+            alert("Cotización enviada con éxito!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Estilos para la sección de Electrobombas */
+.electrobombas {
+    max-width: 1000px; /* Ancho máximo de la sección de electrobombas */
+    margin: 50px auto; /* Margen superior de 50px y centrado horizontalmente */
+    padding: 0 20px; /* Relleno lateral de 20px */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+/* Estilo para el encabezado de la sección de electrobombas */
+.electrobombas h1 {
+    margin-bottom: 40px; /* Margen inferior de 40px */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    color: rgb(178, 17, 15); /* Rojo oscuro */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+/* Contenedor principal de electrobombas */
+.electrobombas-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+/* Estilos para cada elemento de electrobomba */
+.electrobomba-item {
+    width: 30%; /* Ancho del 30% para cada item */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    text-align: center; /* Centra el texto dentro del item */
+    border: 1px solid rgb(187, 187, 189); /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno de 20px */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves para transformaciones y sombras */
+}
+
+/* Efecto al pasar el mouse sobre cada item de electrobomba */
+.electrobomba-item:hover {
+    transform: translateY(-10px); /* Mueve el item hacia arriba al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra al item */
+}
+
+/* Estilo para las imágenes dentro de cada item de electrobomba */
+.electrobomba-item img {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 50%; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+/* Estilo para el título de cada item de electrobomba */
+.electrobomba-item h2 {
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-size: 1.8rem; /* Tamaño de fuente */
+    color: rgb(194, 146, 72); /* Dorado */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+/* Estilo para los párrafos dentro de cada item de electrobomba */
+.electrobomba-item p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    color: #666; /* Color gris para el texto */
+}
+
+/* Estilo para el botón "Ver más" dentro de cada item de electrobomba */
+.electrobomba-item .ver-mas {
+    display: inline-block; /* Muestra el botón como un bloque en línea */
+    background-color: rgb(178, 17, 15); /* Rojo oscuro */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Relleno interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    text-decoration: none; /* Sin subrayado en el texto */
+    font-weight: bold; /* Negrita para el texto del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo al pasar el mouse sobre el botón "Ver más" */
+.electrobomba-item .ver-mas:hover {
+    background-color: rgb(194, 146, 72); /* Cambia a un tono dorado al pasar el mouse */
+}
+.quick-links-slider nav {
+    position: relative;
+    animation: marquee 20s linear infinite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quick-links-slider nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: rgb(178, 17, 15) ;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .electrobombas-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    .electrobomba-item {
+        width: 100%; /* Cada item ocupa el 100% del ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Margen inferior de 20px */
+    }
+}

@@ -1,0 +1,68 @@
+/* Servicios styles */
+.servicios {
+    max-width: 1000px; /* Ancho máximo de 1000px */
+    margin: 50px auto; /* Margen de 50px arriba y auto a los lados */
+    padding: 0 20px; /* Relleno a los lados */
+    text-align: center; /* Centra el texto */
+}
+
+.servicios h1 {
+    margin-bottom: 40px; /* Margen inferior de 40px */
+    font-size: 2.5rem; /* Tamaño de fuente */
+    color: #333; /* Color gris oscuro */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+.servicios-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.servicio {
+    width: 30%; /* Ancho del 30% para cada servicio */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    text-align: center; /* Centra el texto */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Relleno interno de 20px */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.servicio:hover {
+    transform: translateY(-10px); /* Eleva el servicio al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.servicio img {
+    width: 100%; /* Imagen ocupa el 100% del ancho de su contenedor */
+    height: 50%; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+.servicio h2 {
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-size: 1.8rem; /* Tamaño de fuente */
+    color: #e60000; /* Color rojo */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+
+.servicio p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    color: #666; /* Color gris claro */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .servicio {
+        width: 100%; /* Cada servicio ocupa el 100% en pantallas pequeñas */
+        margin-bottom: 20px; /* Margen inferior de 20px */
+    }
+}

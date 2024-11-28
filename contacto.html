@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ENGY S.A.C</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+    <script src="scripts.js" defer></script>
+    <script src="include.js" defer></script>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contacto Section -->
+    <section class="contacto">
+        <h1>Contáctanos</h1>
+        <div class="contacto-container">
+            <div class="contacto-form">
+                <form id="contactoForm">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="contacto-info">
+                <h2>Información de Contacto</h2>
+                <p><strong>Email:</strong> ventas2@engy.com</p>
+                <p><strong>Teléfono:</strong> +51 123 456 789</p>
+                <h2>Síguenos</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/engype"><img src="./Recursos/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.linkedin.com/company/engysac/"><img src="./Recursos/linkedin-icon.png" alt="linkedIn"></a>
+                    <a href="https://www.instagram.com/engy.sac"><img src="./Recursos/instagram-icone.png" alt="Instagram"></a>
+                </div>
+                <section class="maps">
+                    <h2>Encuéntranos</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.07855091718!2d-77.12357711387257!3d-11.966678415062983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cd005fb0848f%3A0xe21d7de1795c8a2c!2sCasa!5e0!3m2!1ses-419!2spe!4v1729068445716!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        document.getElementById("contactoForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Aquí puedes agregar la lógica para enviar el formulario
+            alert("Mensaje enviado con éxito!");
+        });
+    </script>
+</body>
+</html>

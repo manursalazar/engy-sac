@@ -1,0 +1,131 @@
+/* Estilos para la sección de contacto */
+.contacto {
+    max-width: 1000px; /* Ancho máximo de la sección de contacto */
+    margin: 50px auto; /* Margen superior de 50px y centrado horizontalmente */
+    padding: 0 20px; /* Relleno lateral de 20px */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+/* Estilo para el encabezado de la sección de contacto */
+.contacto h1 {
+    margin-bottom: 40px; /* Margen inferior de 40px */
+    font-size: 2.5rem; /* Tamaño de fuente grande para el título */
+    color: #333; /* Color gris oscuro */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Contenedor principal de la información de contacto */
+.contacto-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+/* Estilos para el formulario de contacto y la información de contacto */
+.contacto-form,
+.contacto-info {
+    width: 45%; /* Ancho del 45% para cada uno */
+}
+
+/* Estilo para las etiquetas del formulario */
+.contacto-form label {
+    display: block; /* Muestra cada etiqueta como un bloque */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilo para los campos de entrada y el área de texto del formulario */
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    padding: 10px; /* Relleno interno de 10px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de envío del formulario */
+.contacto-form button {
+    background-color: #e60000; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Relleno interno para el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo al pasar el mouse sobre el botón de envío */
+.contacto-form button:hover {
+    background-color: #b30000; /* Cambia a un tono más oscuro de rojo al pasar el mouse */
+}
+
+/* Estilo para los encabezados de la información de contacto */
+.contacto-info h2 {
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    font-size: 1.8rem; /* Tamaño de fuente para el subtítulo */
+    color: #333; /* Color gris oscuro */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Estilo para los párrafos de la información de contacto */
+.contacto-info p {
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #666; /* Color gris oscuro */
+}
+
+/* Contenedor para los enlaces a redes sociales */
+.social-links {
+    display: flex; /* Utiliza flexbox para alinear los enlaces */
+    justify-content: center; /* Centra los enlaces dentro del contenedor */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-links a {
+    margin: 0 10px; /* Margen horizontal de 10px entre los enlaces */
+}
+
+/* Estilo para los íconos de redes sociales */
+.social-links img {
+    width: 24px; /* Ancho de los íconos */
+    height: 24px; /* Alto de los íconos */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de hover */
+}
+
+/* Efecto al pasar el mouse sobre los íconos de redes sociales */
+.social-links img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el mouse */
+}
+
+/* Contenedor para el mapa */
+.map-container {
+    position: relative; /* Necesario para posicionar el iframe */
+    overflow: hidden; /* Oculta el desbordamiento */
+    padding-top: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+}
+
+/* Estilo para el iframe del mapa */
+.map-container iframe {
+    position: absolute; /* Posiciona el iframe en relación al contenedor */
+    top: 0; /* Alinea al top del contenedor */
+    left: 0; /* Alinea a la izquierda del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Alto completo del contenedor */
+    border: 0; /* Sin borde */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contacto-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    .contacto-form,
+    .contacto-info {
+        width: 100%; /* Cada sección ocupa el 100% del ancho en pantallas pequeñas */
+    }
+}

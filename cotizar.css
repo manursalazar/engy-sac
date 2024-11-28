@@ -1,0 +1,79 @@
+/* Estilos para la sección de cotización */
+.cotizacion {
+    max-width: 1000px; /* Ancho máximo de la sección de cotización */
+    margin: 50px auto; /* Margen superior de 50px y centrado horizontalmente */
+    padding: 0 20px; /* Relleno lateral de 20px */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+/* Contenedor principal de la cotización */
+.cotizacion-container {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+/* Estilos para el formulario de cotización */
+.cotizacion-form {
+    width: 45%; /* Ancho del 45% para el formulario */
+}
+
+/* Estilo para las etiquetas del formulario */
+.cotizacion-form label {
+    display: block; /* Muestra cada etiqueta como un bloque */
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilo para los campos de entrada, selectores y áreas de texto del formulario */
+.cotizacion-form input,
+.cotizacion-form select,
+.cotizacion-form textarea {
+    width: 50%; /* Ocupa el 100% del ancho del contenedor */
+    padding: 10px; /* Relleno interno de 10px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de envío del formulario */
+.cotizacion-form button {
+    background-color: #e60000; /* Color de fondo rojo */
+    color: white; /* Color del texto blanco */
+    padding: 10px 20px; /* Relleno interno para el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+/* Estilo al pasar el mouse sobre el botón de envío */
+.cotizacion-form button:hover {
+    background-color: #b30000; /* Cambia a un tono más oscuro de rojo al pasar el mouse */
+}
+
+/* Estilo para la imagen en la sección de cotización */
+.cotizacion-image {
+    width: 45%; /* Ancho del 45% para la imagen */
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+/* Estilo para las imágenes dentro de la sección de cotización */
+.cotizacion-image img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cotizacion-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos dentro del contenedor */
+    }
+
+    .cotizacion-form,
+    .cotizacion-image {
+        width: 100%; /* Cada sección ocupa el 100% del ancho en pantallas pequeñas */
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventiladores Axiales - ENGY S.A.C</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ventiladoresAxiales.css">
+    <script src="scripts.js" defer></script>
+    <script src="include.js" defer></script>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+    
+    <!--Cotiza hoy movimiento-->
+    <div class="quick-links-slider">
+        <nav>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+            <a href="cotizar.html">15% Black Friday</a>
+        </nav>
+    </div>
+
+    <!-- Equipos de Ventilación Industrial: Ventiladores Axiales -->
+    <section class="ventiladores-axiales">
+        <h1>Ventiladores Axiales de Alto Rendimiento</h1>
+        <div class="ventiladores-container">
+            <!-- Ventilador Axial Modelo 70K CFM -->
+            <div class="ventilador-item">
+                <img src="./Recursos/ventilador-70k-cfms.jpg" alt="Ventilador Axial 70K CFM">
+                <h2>Ventilador Axial 70K CFM</h2>
+                <p>Diseñado para mover grandes volúmenes de aire, ideal para entornos industriales exigentes.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+
+            <!-- Ventilador Axial Modelo 40K CFM -->
+            <div class="ventilador-item">
+                <img src="./Recursos/ventiladorAxial-40k-cfm.jpg" alt="Ventilador Axial 40K CFM">
+                <h2>Ventilador Axial 40K CFM</h2>
+                <p>Perfecto para aplicaciones en minería y plantas de procesamiento, con alta eficiencia energética.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+
+            <!-- Ventilador Axial Modelo 50K CFM -->
+            <div class="ventilador-item">
+                <img src="./Recursos/ventiladorAxial-50kcfm.jpg" alt="Ventilador Axial 50K CFM">
+                <h2>Ventilador Axial 50K CFM</h2>
+                <p>Proporciona un flujo de aire constante en operaciones industriales de gran escala.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+
+            <!-- Ventilador Axial Modelo 30K CFM -->
+            <div class="ventilador-item">
+                <img src="./Recursos/ventiladorAxial-30kcfm.jpg" alt="Ventilador Axial 30K CFM">
+                <h2>Ventilador Axial 30K CFM</h2>
+                <p>Una solución versátil para operaciones de ventilación en espacios medianos y grandes.</p>
+                <a href="https://heyzine.com/flip-book/01051a4502.html" class="ver-mas">Más Información</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Carrusel de imágenes -->
+    <section class="carrusel">
+        <div class="carrusel-container">
+            <img src="./Recursos/ventiladorAxial/1.jpg" alt="Ventilador 1">
+            <img src="./Recursos/ventiladorAxial/2.jpg" alt="Ventilador 2">
+            <img src="./Recursos/ventiladorAxial/3.jpg" alt="Ventilador 3">
+            <img src="./Recursos/ventiladorAxial/4.jpg" alt="Ventilador 4">
+        </div>
+        <a class="carrusel-prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="carrusel-next" onclick="moveSlide(1)">&#10095;</a>
+    </section>
+
+    <!-- JavaScript para el carrusel -->
+    <script>
+        let currentSlide = 0;
+        showSlide(currentSlide);
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carrusel-container img');
+            if (index >= slides.length) { currentSlide = 0; }
+            if (index < 0) { currentSlide = slides.length - 1; }
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === currentSlide) ? 'block' : 'none';
+            });
+        }
+
+        function moveSlide(step) {
+            currentSlide += step;
+            showSlide(currentSlide);
+        }
+
+        // Cambio de slide automáticamente cada 3 segundos
+        setInterval(() => {
+            moveSlide(1);
+        }, 3000);
+    </script>
+
+
+    
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>
